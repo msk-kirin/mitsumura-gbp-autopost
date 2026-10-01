@@ -84,9 +84,8 @@ cd ~/dev/mitsumura-gbp-autopost && python3 scripts/setup_auth.py
 | Secret | `GBP_REFRESH_TOKEN` | 同上 |
 | Secret | `GBP_ACCOUNT_ID` | setup_auth.py が表示したアカウントID |
 | Secret | `GBP_LOCATION_ID` | 同じくビジネスID（みつむら接骨院の行） |
-| Variable | `IMAGE_BASE_URL` | `https://raw.githubusercontent.com/msk-kirin/mitsumura-gbp-autopost/main/images` |
 
-画像は Google が URL から取りに行くので、誰でも開ける URL が必要。**このリポジトリは公開にして、画像をここから配信する**
+画像は Google が URL から取りに行くので、誰でも開ける URL が必要。画像の URL（`IMAGE_BASE_URL`）は post.yml に既定値として書いてあるので登録不要。**このリポジトリは公開にして、画像をここから配信する**
 （投稿文・画像・プログラムは公開される。API の鍵は Secrets に入れるので公開されない。`.env` は git に入らない）。
 
 ### 5. テスト投稿
